@@ -43,6 +43,13 @@ main{
     max-height: 800px;
 }
 
+.extended{
+    background-image: url(/images/overviewextended.jpg);
+    object-fit: cover;
+
+
+}
+
 main img{
 max-width: 500px;
 
@@ -71,9 +78,9 @@ h1{
 }
 
 h2{
-    font-family:"amatic-sc", sans-serif;
+    font-family:"Alegreya", sans-serif;
     color: #5c131a;
-    font-size: 4.5em;
+    font-size: 3em;
 }
 
 h3{
@@ -85,6 +92,7 @@ h3{
 p{
     font-family: "din-2014-narrow", sans-serif;
     color: black;
+    font-size: 1.3em;
 }
 
 button{
@@ -124,9 +132,37 @@ main{
     max-height: 800px;
 }
 
-.test{
-    bs-gutter-x: 7rem;
+.or{
+    font-size: 4em;
 }
+
+.fadein img{
+    opacity:1;
+    transition: 1s ease;
+    }
+    
+    .fadein img:hover{
+    opacity:0.5;
+    transition: 1s ease;
+    }
+
+    input[type=text], input[type=password], textarea {  
+        width: 100%;  
+        padding: 15px;  
+        margin: 5px 0 22px 0;  
+        display: inline-block;  
+        border: none;  
+        background: #f1f1f1;  
+      }  
+ 
+      label{
+        color: rgb(240, 230, 230);
+      }
+
+      .registertitle{
+
+    color:#5c131a;
+      }
 // Amatic SC Regular
 // font-family: "amatic-sc", sans-serif;
 // font-weight: 400;
