@@ -1,151 +1,87 @@
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Fromville | Township and Colony</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/styles.css">
-   <link rel="stylesheet" href="https://use.typekit.net/yyn1hzs.css">
-</head>
-<body>
-   <header>
-      <div class="container">
-      <nav>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Fromville | Township and Colony</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="https://use.typekit.net/yyn1hzs.css">
+   </head>
+   <body class="register">
+      <header>
+         <div class="container">
+         <nav>
             <div class="row justify-content-between">
-               <div class="col-3" style="max-width: 30%">
-                  <img src="images/aplogo.png" class="toplogo" alt="">
+               <div class="col-6">
+                  <a href="index.html">
+                  <img src="images/logowhite.svg" class="toplogo" style="max-height: 150px;">
+                  </a>
                </div>
-               <div class="col-5">
-                  <ul>
-                     <li><a href="index.html" class="current">Home</a></li>
-                     <li ><a href="register.html">Register</a></li>
-                  </ul>
+               <div class="col-3 col-s-6 mt-2">  
+                  <a href="register.html">
+                  <button type="button" class="btn btn-secondary mt-4 p-2 my-auto">Register</button>
+                  </a> 
                </div>
          </nav>
          </div>
       </header>
       <main>
-         <div class="container justify-content-center">
-            <img src="images/logowhitelong.svg" alt="" class="center">
+         <form class="register">
             <div class="container">
-               <a href="register.html">
-                  <h2 class="text-center mb-3">Register for your trip here</h2>
-               </a>
-               <div class="container">
-                  <img src="images/whitearrow.svg" class="center" style="max-width: 10%" alt="">
-               </div>
+            <h2 class="text-center registertitle">Register for your trip here</h2>
+            <hr>
+            <label>Your Full Name :</label>
+            <div>
+               <input type="text" name="firstname" placeholder= "First Name" style="max-width: 470px;" required />
+               <input type="text" name="middlename" placeholder= "Middle Name" style="max-width: 300px;" required />
+               <input type="text" name="lastname" placeholder= "Last Name" style="max-width: 470px;" required />
             </div>
-         </div>
+            <div class="mb-3">
+               <label class="mb-2">  
+               Choice of residence : 
+               </label><br>   
+               <input type="radio" id="colonyhouse" name="residencechoice" value="colonyhouse">
+               <label for="colonyhouse">The Colony House</label><br>
+               <input type="radio" id="thetownship" name="residencechoice" value="residencechoice">
+               <label for="thetownship">The Township</label><br>
+            </div>
+            <div>
+               <label>  
+               Transportation method to town: 
+               </label>    
+               <select>
+                  <option placeholder="Transportation"></option>
+                  <option value="Car">Car</option>
+                  <option value="Public Bus">Public Bus</option>
+                  <option value="Van">Van</option>
+                  <option value="Motorcycle">Motorcycle</option>
+               </select>
+            </div>
+            <label class="mt-3">  
+            # of travelers : 
+            </label>    
+            <select>
+               <option placeholder="# of Travelers"></option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">4</option>
+               <option value="5 or more">5 or more</option>
+            </select>
+            <div class="mt-3">
+               <label for="Expected Date of Arrival">Expected Date of Arrival</label>
+               <input type="date" id="arrivaldate" name="Arrival Date">
+            </div>
+            <div class="mt-3">
+               <input type="submit" value="Submit">
+            </div>
+         </form>
       </main>
-      <section class="bg-tan">
-         <div class="container">
-            <div class="row justify-content-center">
-               <div class=".col-12 .col-sm-6 .col-md-8 text-center">
-                  <h1 class="mt-3">Welcome to your home away from home</h1>
-               </div>
-               <div class="row justify-content-center">
-                  <div class=".col-12 .col-sm-6 .col-md-8 text-center">
-                     <p class="mb-5 mt-3 justify-content-center text-center center" style="width: 53%;">This is a placeholder paragraph about what awaits you at your new getaway location. There’s lots do and there’s totally no reason to feel uneasy about any of it. If you register you’ll be super glad you did. I didn’t write enough text here originally and want the text to end flush with the picture, so I am writing more content to allow success of my dreams. </p>
-                  </div>
-               </div>
-               <div class=".col-12 .col-md-4 gx-2 mb-5">
-                  <img src="images/overviewextended.jpg" alt="Overhead view of Fromville" class="center overview">
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="bg-green" style="background-image: url('images/background.jpg');">
-         <div class="row justify-content-center test">
-            <h2 class="text-center col-12 mt-5">Things to do</h2>
-         </div>
-         <div class="row justify-content-center mt-3">
-            <div class="col-8 thing">
-               <div class="row">
-                  <div class="col-sm-8 images my-auto" style="float:left; overflow: hidden;">
-                     <img src="images/Diner.jpg" alt="your-image-description" style="max-width: 700px; float:left;">
-                  </div>
-                  <div class="col-sm-4 mt-5">
-                     <h3>Eat at the Diner</h3>
-                     <p>Indulge in the local charm at our classic diner, where the aroma of home-cooked meals welcomes you. From sizzling burgers to mouthwatering pies, every bite at the diner is a taste of our town's heritage. </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- Backwards -->
-         <div class="row justify-content-center p-5">
-            <div class="col-8 thing">
-               <div class="row">
-                  <div class="col-sm-4 mt-5">
-                     <h3>An evening at the Bogs</h3>
-                     <p>Experience tranquility amidst nature by enjoying an evening swim in our serene bogs. As the sun sets, the water mirrors the colorful sky, creating a magical atmosphere perfect for unwinding after a bustling day.</p>
-                  </div>
-                  <div class="col-sm-8 images" style="float:left; overflow: hidden;">
-                     <img src="images/bogs.jpeg" alt="your-image-description" style="max-width: 700px; float:right;">
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="row justify-content-center">
-            <div class="col-8 thing">
-               <div class="row">
-                  <div class="col-sm-8 images" style="float:left; overflow: hidden;">
-                     <img src="images/church.jpeg" alt="your-image-description" style="max-width: 700px; float:left;">
-                  </div>
-                  <div class="col-sm-4 mt-5">
-                     <h3>See our historic Church</h3>
-                     <p>Explore the rich history of our town by visiting the iconic historic church. Meet Father McCaughtry, a pillar of our community, whose warmth and knowledge breathe life into the stories embedded within these ancient walls. </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="row justify-content-center p-5">
-            <div class="col-8 thing">
-               <div class="row">
-                  <div class="col-sm-4 mt-5 my-auto">
-                     <h3>Grab a drink at the bar</h3>
-                     <p>Quench your thirst and mingle with friendly faces at our beloved town bar. Sip on local brews and unwind in the cozy ambiance, where laughter and shared stories echo through the night, making every drink a memory to cherish.</p>
-                  </div>
-                  <div class="col-sm-8 images" style="float:right; overflow:auto;">
-                     <img src="images/bar.jpeg" alt="your-image-description" style="max-width: 700px; float:right;">
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="bg-tan">
-         <div class="container">
-            <div class="row">
-               <div class=".col-12 .col-sm-6 .col-md-8">
-                  <h2 class="text-center mt-3">Where to stay</h2>
-                  <p class="text-center mb-5">Everyone in our community picks one out of our two living arrangements. Be sure to choose wisely.</p>
-               </div>
-               <div class="row justify-content-center mt-3">
-                  <div class="col col-lg-4 px-0 mb-5 fadein" style="float:left; overflow: hidden;">
-                     <a href="register.html">
-                        <img src="images/colonyhouse.png" alt="Overhead view of Fromville" style="overflow: hidden" class="mb-3">
-                        <h3 class="mt-3 text-center">Colony House</h3>
-                        <p> Step back in time and immerse yourself in the enchanting heritage of our town by choosing the Colony House. Nestled amidst historic cobblestone streets and rustic architecture, this charming abode echoes tales of the past. With its quaint design and timeless ambiance, the Colony House offers a unique living experience, inviting you to become part of the town's living history. Embrace the sense of community within these storied walls, where each nook whispers a story and every corner evokes a nostalgic charm that's hard to resist.</p>
-                     </a>
-                  </div>
-                  <div class="col-md-auto my-auto p-5">
-                     <h3 class="text-center my-auto mb-5 or px-5"> OR </h3>
-                  </div>
-                  <div class="col col-lg-4 px-0 mb-5 fadein" style="float:left; ">
-                     <a href="register.html">
-                        <img src="images/townoverview.png" alt="Overhead view of Fromville" class="mb-3">
-                        <h3 class="mt-3 text-center">The Township</h3>
-                        <p>Experience modern comfort while being seamlessly woven into the vibrant fabric of our town by choosing a house within the township. Enjoy the convenience of contemporary amenities and the freedom to infuse your own style into your living space. Your township house provides easy access to local attractions, bustling markets, and a dynamic social scene, ensuring a lifestyle that's both connected and personalized. Revel in the fusion of modernity and community spirit as you create your haven within the heart of our thriving town.</p>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
       <footer>
-         <div class="bg-deep-blue">
+         <div class="bg-deep-blue p-1">
             <p class="text-center">Copyright &copy; 2023 <img src="images/logoblack.svg" style="width: 5%;" alt="logo"> All Rights Reserved.</p>
          </div>
       </footer>
@@ -153,4 +89,4 @@
          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
          crossorigin="anonymous"></script>
    </body>
-</html>
+   </html

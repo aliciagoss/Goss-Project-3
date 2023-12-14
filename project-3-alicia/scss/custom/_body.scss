@@ -12,13 +12,16 @@ nav a{
     font-weight: bold;
     font-family: arial;
     font-family: 'alegreya',serif;
+    vertical-align: middle;
 }
 
 a{
     text-decoration: none;
-    
+    vertical-align: middle;
 
 }
+
+
 main h2{
     color: white;
     font-size: 3em;
@@ -32,6 +35,12 @@ li{
     margin-left:65px;
 }
 
+img{
+    max-width: 90%;
+    height:auto;
+    max-width: fit-content;
+
+}
 section{
         padding: 2rem 0px;
 }
@@ -95,14 +104,6 @@ p{
     font-size: 1.3em;
 }
 
-button{
-    border-radius:12px;
-    font-family:"din-2014-narrow", sans-serif;
-    font-size: 2rem;
-    color: #5c131a;
-    margin:auto;
-}
-
 .center{
 text-align: center;
 
@@ -112,10 +113,7 @@ text-align: center;
 
 }
 
-.register{
-    margin-bottom: 1000px;
 
-}
 
 .toplogo{
 height: 50%;
